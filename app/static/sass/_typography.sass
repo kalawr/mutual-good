@@ -1,0 +1,51 @@
+*
+	line-height: inherit
+
+html
+	font-family: 'Rubik', sans-serif
+	font-size: 120%
+	font-weight: 300
+	line-height: $lh
+	color: $emphasis
+
+h1,
+h2
+	font-family: 'Exo 2', cursive
+	font-size: 1.1rem
+	font-weight: 300
+	line-height: inherit
+	margin: 0
+
+h2
+	+mb(1)
+
+p
+	margin: 0
+	text-align: justify
+	+mb(1)
+
+a
+	text-decoration: none
+	color: inherit
+	
+	&[href]
+		color: #4990fd
+		border-bottom: 1px solid
+		cursor: pointer
+
+	&.invisible
+		color: inherit
+		border-bottom: 0
+
+em
+	font-style: normal
+	border-bottom: 1px solid $emphasis-border
+
+.center
+	text-align: center
+
+.small-caps
+	+small-caps
+
+.hi
+	font-size: 1.2rem

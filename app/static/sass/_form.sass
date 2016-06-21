@@ -1,0 +1,35 @@
+form.contact
+	opacity: 0.5
+	transition: opacity 0.3s ease-in
+
+	&.touched
+		opacity: 1
+
+	label
+		display: block
+		margin-bottom: 0.3rem
+
+	input,
+	textarea
+		display: block
+		width: 100%
+		padding: 0.4em 0.5em
+		border: 1px solid $emphasis-border
+		border-radius: 0.1rem
+		font-family: inherit
+		font-size: inherit
+		font-weight: inherit
+		line-height: inherit
+		color: inherit
+
+		&:focus
+			outline: 0
+
+	textarea
+		resize: vertical
+
+	.label
+		+small-caps
+
+	button
+		+mt(1)

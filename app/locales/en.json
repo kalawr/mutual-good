@@ -1,0 +1,38 @@
+{
+	"LANGUAGE": "en",
+	"OTHER_LANGUAGES": [
+		"ru"
+	],
+	"PAGE_TITLE": "Developer seeking collaboration",
+	"STATUS_AVAILABLE": "Still available",
+	"STATUS_UNAVAILABLE": "Already found my man, but would still like to hear from you",
+	"SECTION_NAMES": [
+		"Address",
+		"Expectations",
+		"Contact Me"
+	],
+	"SUMMARY": {
+		"INTRODUCTION": "Hi, I'm Illia.",
+		"OCCUPATION": "A Developer",
+		"ADDRESS": "When a young developer meets a young designer, both can expect loads of fun and rapid progress. I'm dying to find a designer to collaborate with to deliver something for both of us to be proud of.",
+		"CALL_TO_ACTION": "Combine superpowers"
+	},
+	"ME": {
+		"HEADING": "Me",
+		"ELABORATION": "Count on me to <em>be</em> fairly <em>fluent</em> with web technologies (I go with Javascript and Node.js), to <em>have fun</em> getting my hands dirty with code and to <em>be open</em> for collaboration."
+	},
+	"YOU": {
+		"HEADING": "You",
+		"ELABORATION": "I expect you to <em>be a visual thinker</em> and a creative person, to <em>enjoy designing</em> for the Web and to <em>be open</em> for collaboration."
+	},
+	"CONTACT": {
+		"HEADING": "Let's go create something!",
+		"ELABORATION": "Drop me a few lines via <a href='mailto:kallaur125@gmail.com?subject=How About We Collaborate?' title='kallaur125@gmail.com'>e-mail</a>, <a href='skype:kalawr' title='kalawr'>Skype</a> or right here."
+	},
+	"FORM_FIELDS": {
+		"EMAIL": "Email",
+		"NAME": "Name",
+		"MESSAGE": "Message",
+		"SUBMIT": "Send"
+	}
+}

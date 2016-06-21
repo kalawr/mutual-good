@@ -1,0 +1,17 @@
+{
+  "name": "collab",
+  "authors": [
+    "Illia Kalaur <kallaur125@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "fetch": "^1.0.0",
+    "lodash": "^4.13.1",
+    "smoothScroll": "alicelieutier/smoothScroll#master",
+    "es6-promise": "^3.2.2"
+  }
+}

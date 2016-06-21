@@ -1,0 +1,6 @@
+{
+	"directory": "js/vendor/",
+	"scripts": {
+		"postinstall": "lodash include=each,minBy,find,throttle -o js/vendor/lodash/custom/lodash.js"
+	}
+}

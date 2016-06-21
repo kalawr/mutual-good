@@ -1,0 +1,32 @@
+$lh: 1.6rem
+$layout-breakpoint: 650px
+$aside-breakpoint: 1100px
+
+$emphasis: #5d5d5d
+$emphasis-border: lighten($emphasis, 10%)
+
+
+=cf
+	&::after
+		content: ''
+		display: table
+		clear: both
+
+=small-caps
+	text-transform: uppercase
+	font-family: 'Rubik', sans-serif
+	font-weight: 400
+	font-size: 0.6rem
+	letter-spacing: 0.7px
+
+=mb($n)
+	margin-bottom: $n * $lh
+
+=mt($n)
+	margin-top: $n * $lh
+
+=ui
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none

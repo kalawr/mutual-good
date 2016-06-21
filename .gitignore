@@ -1,0 +1,5 @@
+node_modules
+app/static/js/vendor/
+app/static/js/dist/
+app/static/css/
+app/sensitive-data.json

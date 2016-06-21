@@ -1,0 +1,72 @@
+html
+	head
+		meta(charset='utf-8')
+		link(rel='stylesheet', href='css/all.css')
+		title= PAGE_TITLE
+	body
+		.contain
+
+			nav.languages
+				a#languages-trigger.current!= LANGUAGE
+				each LANG in OTHER_LANGUAGES
+					a.rest(href='/'+LANG)!= LANG
+
+			section#top
+				.cf
+					.status!= STATUS_AVAILABLE
+
+				.box-sm.fl
+					.reduce-width.center
+						h1!= SUMMARY.INTRODUCTION
+						.occupation!= SUMMARY.OCCUPATION
+						.geo
+							a.invisible(target='_blank', href='https://www.google.by/maps/place/Minsk/')
+								img(src='icons/location.svg')
+				.box-lg.fr
+					p!= SUMMARY.ADDRESS
+					button(data-scroll-target='#middle')!= SUMMARY.CALL_TO_ACTION
+
+			section#middle
+				.box-md.fl
+					h2!= ME.HEADING
+					p!= ME.ELABORATION
+
+				.box-md.fr
+					h2!= YOU.HEADING
+					p!= YOU.ELABORATION
+
+			section#bottom
+				.box-md.fl
+					h2!= CONTACT.HEADING
+					p!= CONTACT.ELABORATION
+
+					form.contact(name='contact')
+						label
+							span.label!= FORM_FIELDS.EMAIL
+							input(type='email', name='mail', required)
+
+						label
+							span.label!= FORM_FIELDS.NAME
+							input(type='text', name='name', required)
+
+						label
+							span.label!= FORM_FIELDS.MESSAGE
+							textarea(name='message', required)
+
+						button(type='submit')!= FORM_FIELDS.SUBMIT
+
+				aside
+					nav
+						ol
+							li
+								a(data-scroll-target='#top')!= SECTION_NAMES[0]
+							li
+								a(data-scroll-target='#middle')!= SECTION_NAMES[1]
+							li
+								a(data-scroll-target='#bottom')!= SECTION_NAMES[2]
+
+			script(type='text/javascript', src='js/vendor/es6-promise/es6-promise.min.js')
+			script(type='text/javascript', src='js/vendor/fetch/fetch.js')
+			script(type='text/javascript', src='js/vendor/lodash/custom/lodash.min.js')
+			script(type='text/javascript', src='js/vendor/smoothScroll/smoothscroll.min.js')
+			script(type='text/javascript', src='js/dist/bundle.js')

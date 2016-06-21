@@ -1,0 +1,25 @@
+{
+  "name": "collab",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.14.0",
+    "nodemailer": "^2.4.2",
+    "nodemailer-wellknown": "^0.1.10",
+    "pug": "^2.0.0-beta3",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app/index",
+    "postinstall": "cd app/static && bower install && cd ../..",
+    "sass": "node-sass app/static/sass -o app/static/css --source-map true",
+    "sass:w": "node-sass -w app/static/sass -o app/static/css --source-map true"
+  },
+  "author": "Illia Kalaur <kallaur125@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

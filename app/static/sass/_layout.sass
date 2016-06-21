@@ -1,0 +1,48 @@
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+
+section
+	height: 100vh
+	padding-top: 100px
+	padding-bottom: 100px
+	+cf
+
+.contain
+	max-width: 800px
+	width: 90%
+	margin-left: auto
+	margin-right: auto
+	
+.cf
+	+cf
+
+.fl
+	float: left
+
+.fr
+	float: right
+
+.reduce-width
+	float: left
+	+cf
+
+.box-sm
+	width: 20%
+
+.box-lg
+	width: 75%
+
+.box-md
+	width: 40%
+
+
+.box-sm,
+.box-md,
+.box-lg
+	+mb(1)
+
+	@media (max-width: $layout-breakpoint)
+		width: 100%
